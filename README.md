@@ -74,7 +74,7 @@ npm install && npm run dev
 #### Chakra-UI
 
 For this project I wanted for the first time to try out some component library, before I mainly used Styled Components. I considered Theme UI, Material UI and Chakra UI. I decided to go with Chakra UI, because they create their components with accessibility in mind and it was used by Lee Robinson in his Next.js tutorials.
-I really recommend it if you are a fan of CSS-in-JS like me. The main features I like about it are:
+I really recommend it if you are a fan of CSS-in-JS. The main features I like about it are:
 
 - it provides default breakpoints: base, sm: "30em", md: "48em", lg: "62em" (you can customize them and add more),
 - under hood it uses @media(min-width) media query to ensure interfaces are mobile-first.
@@ -205,4 +205,4 @@ Create unit and integration tests with Jest/React-Testing-Library.
 
 ## Author
 
-- Frontend Mentor - [@mbart13](https://www.frontendmentor.io/profile/mbart13)
+- Frontend Mentor - [@tropicolx](https://www.frontendmentor.io/profile/tropicolx)
