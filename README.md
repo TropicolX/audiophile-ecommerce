@@ -1,19 +1,19 @@
 # Frontend Mentor - Audiophile e-commerce website solution
 
-This is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the Audiophile e-commerce website challenge on Frontend Mentor). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Setup](#setup)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+    -   [Setup](#setup)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+-   [Author](#author)
 
 ## Overview
 
@@ -21,17 +21,17 @@ This is a solution to the [Audiophile e-commerce website challenge on Frontend M
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size :heavy_check_mark:
-- See hover states for all interactive elements on the page :heavy_check_mark:
-- Add/Remove products from the cart :heavy_check_mark:
-- Edit product quantities in the cart :heavy_check_mark:
-- Fill in all fields in the checkout :heavy_check_mark:
-- Receive form validations if fields are missed or incorrect during checkout :heavy_check_mark:
-- See correct checkout totals depending on the products in the cart :heavy_check_mark:
-  - Shipping always adds $50 to the order :heavy_check_mark:
-  - VAT is calculated as 20% of the product total, excluding shipping :heavy_check_mark:
-- See an order confirmation modal after checking out with an order summary :heavy_check_mark:
-- **Bonus**: Keep track of what's in the cart, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app) :heavy_check_mark:
+-   View the optimal layout for the app depending on their device's screen size :heavy_check_mark:
+-   See hover states for all interactive elements on the page :heavy_check_mark:
+-   Add/Remove products from the cart :heavy_check_mark:
+-   Edit product quantities in the cart :heavy_check_mark:
+-   Fill in all fields in the checkout :heavy_check_mark:
+-   Receive form validations if fields are missed or incorrect during checkout :heavy_check_mark:
+-   See correct checkout totals depending on the products in the cart :heavy_check_mark:
+    -   Shipping always adds $50 to the order :heavy_check_mark:
+    -   VAT is calculated as 20% of the product total, excluding shipping :heavy_check_mark:
+-   See an order confirmation modal after checking out with an order summary :heavy_check_mark:
+-   **Bonus**: Keep track of what's in the cart, even after refreshing the browser (`localStorage` could be used for this if you're not building out a full-stack app) :heavy_check_mark:
 
 ### Screenshot
 
@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-[Live Site URL](https://audiophile-ecommerce-mbart13.vercel.app/)
+[Live Site URL](https://#/)
 
 ### Setup
 
@@ -59,15 +59,15 @@ npm install && npm run dev
 
 ### Built with
 
-- Next.js
-- Chakra UI
-- Redux Toolkit
-- React-Hook-Form
-- Framer-Motion
-- React-Intersection-Observer
-- TypeScript
-- Atomic Design System
-- Mobile-first workflow
+-   Next.js
+-   Chakra UI
+-   Redux Toolkit
+-   React-Hook-Form
+-   Framer-Motion
+-   React-Intersection-Observer
+-   TypeScript
+-   Atomic Design System
+-   Mobile-first workflow
 
 ### What I learned
 
@@ -76,9 +76,9 @@ npm install && npm run dev
 For this project I wanted for the first time to try out some component library, before I mainly used Styled Components. I considered Theme UI, Material UI and Chakra UI. I decided to go with Chakra UI, because they create their components with accessibility in mind and it was used by Lee Robinson in his Next.js tutorials.
 I really recommend it if you are a fan of CSS-in-JS. The main features I like about it are:
 
-- it provides default breakpoints: base, sm: "30em", md: "48em", lg: "62em" (you can customize them and add more),
-- under hood it uses @media(min-width) media query to ensure interfaces are mobile-first.
-- it makes responsive styles really easy to do with the way how you define media queries, as an object or array:
+-   it provides default breakpoints: base, sm: "30em", md: "48em", lg: "62em" (you can customize them and add more),
+-   under hood it uses @media(min-width) media query to ensure interfaces are mobile-first.
+-   it makes responsive styles really easy to do with the way how you define media queries, as an object or array:
 
 ```js
     <Stack
@@ -105,30 +105,30 @@ Then I figured that I'm already using array of objects representing navlinks tha
 
 ```js
 export const links = [
-  {
-    id: 1,
-    text: 'home',
-    url: '/',
-  },
-  {
-    id: 2,
-    text: 'Headphones',
-    url: '/headphones',
-    img: '/images/shared/desktop/image-headphones.png',
-  },
-  {
-    id: 3,
-    text: 'Speakers',
-    url: '/speakers',
-    img: '/images/shared/desktop/image-speakers.png',
-  },
-  {
-    id: 4,
-    text: 'Earphones',
-    url: '/earphones',
-    img: '/images/shared/desktop/image-earphones.png',
-  },
-]
+    {
+        id: 1,
+        text: "home",
+        url: "/",
+    },
+    {
+        id: 2,
+        text: "Headphones",
+        url: "/headphones",
+        img: "/images/shared/desktop/image-headphones.png",
+    },
+    {
+        id: 3,
+        text: "Speakers",
+        url: "/speakers",
+        img: "/images/shared/desktop/image-speakers.png",
+    },
+    {
+        id: 4,
+        text: "Earphones",
+        url: "/earphones",
+        img: "/images/shared/desktop/image-earphones.png",
+    },
+];
 ```
 
 I realized I can easily use it to style active link. All I had to do was to use useRouter hook that comes with next.js and returns [the path (including the query) shown in the browser](https://nextjs.org/docs/api-reference/next/router) and add this line to the existing code: 'color={asPath === link.url ? 'accent' : 'white'}
@@ -205,4 +205,4 @@ Create unit and integration tests with Jest/React-Testing-Library.
 
 ## Author
 
-- Frontend Mentor - [@tropicolx](https://www.frontendmentor.io/profile/tropicolx)
+-   Frontend Mentor - [@tropicolx](https://www.frontendmentor.io/profile/tropicolx)
